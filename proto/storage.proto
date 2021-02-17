@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package  x17138744.awesomeProject;
+
+option go_package = "pb";
+
+import "memory.proto";
+
+message Storage {
+  enum Driver{
+    UNKNOWN = 0;
+    HDD = 1;
+    SDD = 2;
+  }
+  Driver driver = 1;
+  Memory memory = 2;
+}
